@@ -1,0 +1,3 @@
+"use client";
+import {useEffect} from "react"; import {useRouter} from "next/navigation"; import {useHoraStore} from "@/lib/store"; import {Header} from "@/components/Header"; import {Footer} from "@/components/Footer";
+export default function GuestPage(){const setGuestMode=useHoraStore(s=>s.setGuestMode);const router=useRouter();useEffect(()=>{setGuestMode(true);router.replace("/chart")},[setGuestMode,router]);return <div className="min-h-screen flex flex-col"><Header/><main className="flex-1 flex items-center justify-center"><p className="text-gold-300">Entering Guest Mode…</p></main><Footer/></div>}
