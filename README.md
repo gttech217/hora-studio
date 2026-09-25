@@ -70,4 +70,8 @@ npm install @node-jhora/core @node-jhora/analytics @node-jhora/prediction @node-
 6. Transits / Muhurta modules
 7. AI assistant (chart-context)
 
+## Deployment
+
+The production source of truth is the `main` branch. Vercel Git integration should deploy each new production commit automatically.
+
 © Hora Studio
